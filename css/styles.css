@@ -1,0 +1,122 @@
+@import url("https://fonts.googleapis.com/css2?family=PT+Mono&family=Space+Grotesk:wght@300;400;500;600;700&display=swap");
+:root {
+  --background-blue: #050b22;
+  --text-color-numbers: #c7e6ff;
+  --text-color-heading: #6ec1ff;
+  --text-color-text: #ffffff;
+  /* --background-basecolor: rgb(0, 37, 119); */
+  --background-gradient-main: linear-gradient(
+    145deg,
+    rgba(0, 37, 119, 1) 0%,
+    rgba(3, 21, 68, 0.46682422969187676) 50%,
+    rgba(5, 11, 34, 0) 70%
+  );
+}
+
+*,
+::after,
+::before {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Space Grotesk";
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  background-color: var(--background-blue);
+}
+
+header {
+  background: var(--background-blue);
+  position: sticky;
+  z-index: 100;
+  top: 0;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav .menu {
+  position: relative;
+  top: 8px;
+}
+
+nav .menu .menu-line {
+  height: 1px;
+  margin: 12px 0;
+  width: 30px;
+  background-color: var(--text-color-numbers);
+}
+
+section .main_mobile {
+  display: flex;
+  justify-content: center;
+}
+
+.card {
+  margin: 9rem 0;
+  background: var(--background-gradient-main);
+  padding: 20px;
+  position: relative;
+  width: clamp(320px, 90vw, 450px);
+  height: 260px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  flex-direction: column;
+}
+
+.card-number {
+  font-family: "PT Mono";
+  color: var(--text-color-numbers);
+  font-weight: 300;
+  font-size: 7rem;
+  position: absolute;
+  top: -90px;
+}
+
+.card-content {
+  margin-top: 35px;
+}
+
+.card-content p {
+  text-transform: uppercase;
+  color: var(--text-color-heading);
+  font-weight: 100;
+  font-size: 1.1rem;
+}
+
+.card-content p:nth-child(1) {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  font-size: 1rem;
+}
+
+.card-content p:nth-child(3) {
+  font-size: 1.5rem;
+  font-weight: 400;
+  margin-top: 0.4rem;
+  text-transform: uppercase;
+  color: var(--text-color-text);
+}
+
+.card-content a {
+  position: relative;
+  padding: 10px 55px;
+  text-transform: uppercase;
+  border: 1px solid var(--text-color-text);
+  top: 70px;
+  font-size: 1.3rem;
+  text-decoration: none;
+  color: var(--text-color-text);
+}
+
+hr {
+  opacity: 0.1;
+}
